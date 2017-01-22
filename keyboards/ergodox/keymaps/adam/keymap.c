@@ -34,8 +34,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [BASE] = KEYMAP(  // layer 0 : default
         // left hand
         GUI_T(KC_ESC),  KC_1,         KC_2,   KC_3,        KC_4,   KC_5,   KC_MINS,
-        KC_TRNS,        KC_Q,         KC_W,   KC_E,        KC_R,   KC_T,   KC_TAB,
-        KC_TRNS,        SFT_T(KC_A),  ALT_T(KC_S),   CTL_T(KC_D),  FUNC(1),   KC_G,
+        KC_LBRC,        KC_Q,         KC_W,   KC_E,        KC_R,   KC_T,   KC_TAB,
+        KC_LCBR,        SFT_T(KC_A),  ALT_T(KC_S),   CTL_T(KC_D),  FUNC(1),   GUI_T(KC_G),
         KC_LSHIFT, KC_Z,         KC_X,   KC_C,        KC_V,   KC_B,   KC_BSPC,
         KC_BSLS,        KC_GRAVE,      KC_TRNS,       KC_TRNS,KC_TRNS,
                                               KC_TRNS,  KC_TRNS,
@@ -43,8 +43,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                                                KC_SPC,KC_ENT,KC_TRNS,
         // right hand
              KC_EQL,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             KC_TRNS,
-             KC_TAB,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_TRNS,
-                         KC_H,   FUNC(2),   CTL_T(KC_K),   ALT_T(KC_L),   SFT_T(KC_SCLN),           KC_TRNS,
+             KC_TAB,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_RBRC,
+                         GUI_T(KC_H),   FUNC(2),   CTL_T(KC_K),   ALT_T(KC_L),   SFT_T(KC_SCLN),           KC_RCBR,
              KC_DELETE,  KC_N,   KC_M,   KC_COMM,KC_DOT, KC_QUOT,           KC_LSHIFT,
                                  KC_TRNS,  KC_TRNS,KC_TRNS,KC_TRNS,          KC_SLSH,
              KC_TRNS,        KC_TRNS,
