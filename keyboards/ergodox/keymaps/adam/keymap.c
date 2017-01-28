@@ -3,6 +3,14 @@
 #include "action_layer.h"
 #include "version.h"
 
+// trying to fix mod taps being to moddy
+// taken from https://github.com/qmk/qmk_firmware/blob/bd40844e4eea74c8cb1fba25aff0b21584b0ebf5/keyboards/ergodox/keymaps/win10_writers-block/config.h
+#undef TAPPING_TERM
+#define TAPPING_TERM 230
+#define PREVENT_STUCK_MODIFIERS
+#define IGNORE_MOD_TAP_INTERRUPT
+#define TAPPING_TOGGLE  1
+
 #define BASE 0 // default layer
 #define FLOCK 1 // symbols arrows and F keys on F held down
 #define JLOCK 2 // same as Flock but with fall thru J and mapped to J held down
@@ -39,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
         [BASE] = KEYMAP(
                 // left hand
-                GUI_T(KC_ESC), KC_1, KC_2,   KC_3, KC_4, KC_5, KC_MINS,
+                GUI_T(KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_MINS,
                 KC_LBRC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TAB,
                 F(3), SFT_T(KC_A), ALT_T(KC_S), CTL_T(KC_D), F(1), GUI_T(KC_G),
                 KC_LSHIFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_BSPC,
