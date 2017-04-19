@@ -3,13 +3,6 @@
 #include "action_layer.h"
 #include "version.h"
 
-// trying to fix mod taps being to moddy
-// taken from https://github.com/qmk/qmk_firmware/blob/bd40844e4eea74c8cb1fba25aff0b21584b0ebf5/keyboards/ergodox/keymaps/win10_writers-block/config.h
-#undef TAPPING_TERM
-#define TAPPING_TERM 230
-#define PREVENT_STUCK_MODIFIERS
-#define IGNORE_MOD_TAP_INTERRUPT
-#define TAPPING_TOGGLE  1
 
 #define BASE 0 // default layer
 #define FLOCK 1 // symbols arrows and F keys on F held down
