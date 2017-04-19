@@ -1,4 +1,4 @@
-qmk:
+qk:
   build: .
   environment:
     keymap: adam
