@@ -44,7 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 KC_LBRC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TAB,
                 F(3), SFT_T(KC_A), ALT_T(KC_S), CTL_T(KC_D), F(1), GUI_T(KC_G),
                 KC_LSHIFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_BSPC,
-                KC_BSLS, KC_GRAVE,  _______,  _______ ,_______,
+                _______, _______,  _______,  _______ ,_______,
                 _______,  _______,
                 _______,
                 KC_SPC, KC_ENT, _______ ,
@@ -54,7 +54,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 KC_TAB,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_RBRC,
                 GUI_T(KC_H),   F(2),   CTL_T(KC_K),   ALT_T(KC_L),   SFT_T(KC_SCLN),           F(4),
                 KC_DELETE,  KC_N,   KC_M,   KC_COMM,KC_DOT, KC_QUOT,           KC_LSHIFT,
-                _______,  _______,_______,_______,          KC_SLSH,
+                _______,  _______,_______,_______,          _______,
                 _______,        _______,
                 _______,
                 _______,KC_ENT, KC_SPC
@@ -62,7 +62,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [FLOCK] = KEYMAP(
                 // left hand
                 _______,   KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F11,
-                _______,KC_LBRC,KC_NUHS,  KC_TILD,_______,_______,_______,
+                _______,KC_LBRC,KC_GRV,  KC_TILD,_______,_______,_______,
                 _______,KC_LCBR,_______, _______,_______,_______,
                 _______,KC_BSLS,KC_PIPE,_______,_______,_______,_______,
                 _______,_______,_______,_______,_______,
@@ -82,7 +82,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [JLOCK] = KEYMAP(
                 // left hand
                 _______,   KC_F1,  KC_F2,  KC_F3,  KC_F4,  KC_F5,  KC_F11,
-                _______,KC_LBRC,KC_NUHS,  KC_TILD,_______,_______,_______,
+                _______,KC_LBRC,KC_GRV,  KC_TILD,_______,_______,_______,
                 _______,KC_LCBR,_______, _______,_______,_______,
                 _______,KC_BSLS,KC_PIPE,_______,_______,_______,_______,
                 _______,_______,_______,_______,_______,
