@@ -68,7 +68,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 _______,_______,_______,_______,_______,
                 _______,_______,
                 _______,
-                _______,_______,_______,
+                KC_ESC,_______,_______,
                 // right hand
                 KC_F12, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  _______,
                 _______, _______, KC_HOME,   KC_PGUP,    _______,    KC_RBRC, _______,
@@ -88,7 +88,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 _______,_______,_______,_______,_______,
                 _______,_______,
                 _______,
-                _______,_______,_______,
+                KC_ESC,_______,_______,
                 // right hand
                 KC_F12, KC_F6,   KC_F7,  KC_F8,   KC_F9,   KC_F10,  _______,
                 _______, _______, KC_HOME,   KC_PGUP,    _______,    KC_RBRC, _______,
