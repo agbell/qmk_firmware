@@ -47,7 +47,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 _______, _______,  _______,  _______ ,_______,
                 _______,  _______,
                 _______,
-                KC_SPC, KC_ENT, _______ ,
+                KC_SPC, _______, _______ ,
 
                 // right hand
                 KC_EQL,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             _______,
@@ -57,7 +57,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 _______,  _______,_______,_______,          _______,
                 _______,        _______,
                 _______,
-                _______,KC_ENT, KC_SPC
+                _______,_______, KC_ENT
         ),
         [FLOCK] = KEYMAP(
                 // left hand
