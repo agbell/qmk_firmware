@@ -41,9 +41,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         [BASE] = KEYMAP(
                 // left hand
                 GUI_T(KC_ESC), KC_1, KC_2, KC_3, KC_4, KC_5, KC_MINS,
-                KC_LBRC, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TAB,
-                F(3), SFT_T(KC_A), ALT_T(KC_S), CTL_T(KC_D), F(1), GUI_T(KC_G),
-                KC_LSHIFT, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_BSPC,
+                _______, KC_Q, KC_W, KC_E, KC_R, KC_T, KC_TAB,
+                _______, SFT_T(KC_A), ALT_T(KC_S), CTL_T(KC_D), F(1), GUI_T(KC_G),
+                _______, KC_Z, KC_X, KC_C, KC_V, KC_B, KC_BSPC,
                 _______, _______,  _______,  _______ ,_______,
                 _______,  _______,
                 _______,
@@ -51,9 +51,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
                 // right hand
                 KC_EQL,     KC_6,   KC_7,   KC_8,   KC_9,   KC_0,             _______,
-                KC_TAB,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             KC_RBRC,
-                GUI_T(KC_H),   F(2),   CTL_T(KC_K),   ALT_T(KC_L),   SFT_T(KC_SCLN),           F(4),
-                KC_DELETE,  KC_N,   KC_M,   KC_COMM,KC_DOT, KC_QUOT,           KC_LSHIFT,
+                KC_TAB,     KC_Y,   KC_U,   KC_I,   KC_O,   KC_P,             _______,
+                GUI_T(KC_H),   F(2),   CTL_T(KC_K),   ALT_T(KC_L),   SFT_T(KC_SCLN),           _______,
+                KC_DELETE,  KC_N,   KC_M,   KC_COMM,KC_DOT, KC_QUOT,           _______,
                 _______,  _______,_______,_______,          _______,
                 _______,        _______,
                 _______,
