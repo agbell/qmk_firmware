@@ -63,7 +63,7 @@ The following shortcuts automatically add `LSFT()` to keycodes to get commonly u
     KC_PIPE  |
     KC_COLN  :
 
-`MT(mod, kc)` - is *mod* (modifier key - MOD_LCTL, MOD_LSFT) when held, and *kc* when tapped. In other words, you can have a key that sends Esc (or the letter O or whatever) when you tap it, but works as a Control key or a Shift key when you hold it down. 
+`MT(mod, kc)` - is *mod* (modifier key - MOD_LCTL, MOD_LSFT) when held, and *kc* when tapped. In other words, you can have a key that sends Esc (or the letter O or whatever) when you tap it, but works as a Control key or a Shift key when you hold it down.
 
 These are the values you can use for the `mod` in `MT()` (right-hand modifiers are not available):
 
@@ -76,13 +76,13 @@ These can also be combined like `MOD_LCTL | MOD_LSFT` e.g. `MT(MOD_LCTL | MOD_LS
 
 We've added shortcuts to make common modifier/tap (mod-tap) mappings more compact:
 
-  * `CTL_T(kc)` - is LCTL when held and *kc* when tapped 
-  * `SFT_T(kc)` - is LSFT when held and *kc* when tapped 
-  * `ALT_T(kc)` - is LALT when held and *kc* when tapped 
-  * `GUI_T(kc)` - is LGUI when held and *kc* when tapped 
+  * `CTL_T(kc)` - is LCTL when held and *kc* when tapped
+  * `SFT_T(kc)` - is LSFT when held and *kc* when tapped
+  * `ALT_T(kc)` - is LALT when held and *kc* when tapped
+  * `GUI_T(kc)` - is LGUI when held and *kc* when tapped
   * `ALL_T(kc)` - is Hyper (all mods) when held and *kc* when tapped. To read more about what you can do with a Hyper key, see [this blog post by Brett Terpstra](http://brettterpstra.com/2012/12/08/a-useful-caps-lock-key/)
 
-### Temporarily setting the default layer 
+### Temporarily setting the default layer
 
 `DF(layer)` - sets default layer to *layer*. The default layer is the one at the "bottom" of the layer stack - the ultimate fallback layer. This currently does not persist over power loss. When you plug the keyboard back in, layer 0 will always be the default. It is theoretically possible to work around that, but that's not what `DF` does.
 
@@ -103,7 +103,7 @@ const macro_t *action_get_macro(keyrecord_t *record, uint8_t id, uint8_t opt) //
     case 0: // this would trigger when you hit a key mapped as M(0)
       if (record->event.pressed) {
         return MACRO( I(255), T(H), T(E), T(L), T(L), W(255), T(O), END  ); // this sends the string 'hello' when the macro executes
-      } 
+      }
       break;
   }
   return MACRO_NONE;
@@ -129,11 +129,11 @@ Everything is assuming you're in Qwerty (in software) by default, but there is b
    #include "keymap_<layout>.h"
 
 Where <layout> is "colemak" or "dvorak". After including this line, you will get access to:
- 
+
  * `CM_*` for all of the Colemak-equivalent characters
  * `DV_*` for all of the Dvorak-equivalent characters
- 
-These implementations assume you're using Colemak or Dvorak on your OS, not on your keyboard - this is referred to as a software-implemented layout. If your computer is in Qwerty and your keymap is in Colemak or Dvorak, this is referred to as a firmware-implemented layout, and you won't need these features. 
+
+These implementations assume you're using Colemak or Dvorak on your OS, not on your keyboard - this is referred to as a software-implemented layout. If your computer is in Qwerty and your keymap is in Colemak or Dvorak, this is referred to as a firmware-implemented layout, and you won't need these features.
 
 To give an example, if you're using software-implemented Colemak, and want to get an `F`, you would use `CM_F` - `KC_F` under these same circumstances would result in `T`.
 
@@ -169,7 +169,7 @@ This requires [some hardware changes](https://www.reddit.com/r/MechanicalKeyboar
 
 ## Building
 
-Download or clone the whole firmware and navigate to the keyboards/atreus folder. Once your dev env is setup, you'll be able to type `make` to generate your .hex - you can then use `make dfu` to program your PCB once you hit the reset button. 
+Download or clone the whole firmware and navigate to the keyboards/atreus folder. Once your dev env is setup, you'll be able to type `make` to generate your .hex - you can then use `make dfu` to program your PCB once you hit the reset button.
 
 Depending on which keymap you would like to use, you will have to compile slightly differently.
 
