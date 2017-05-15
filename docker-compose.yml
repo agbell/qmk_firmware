@@ -3,5 +3,8 @@ qk:
   environment:
     keymap: adam
     keyboard: ergodox
+    ## comment out for ergodox
+    keyboard: lets_split
+    subproject: rev2
   volumes:
     - .:/qmk
