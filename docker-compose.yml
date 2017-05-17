@@ -1,10 +1,14 @@
 qk:
+  # stdin_open: true
+  # tty: true
+  #entrypoint: /bash
   build: .
   environment:
     keymap: adam
     keyboard: ergodox
     ## comment out for ergodox
     keyboard: lets_split
+    keymap: adam
     subproject: rev2
   volumes:
     - .:/qmk
