@@ -25,4 +25,4 @@ ENV keymap=default
 
 VOLUME /qmk
 WORKDIR /qmk
-CMD make clean; make; make avrdude;
+CMD make clean; make;
