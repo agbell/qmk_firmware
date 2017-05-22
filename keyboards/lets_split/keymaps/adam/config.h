@@ -18,9 +18,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USE_SERIAL
 
-#define MASTER_LEFT
+//#define MASTER_LEFT
 // #define MASTER_RIGHT
-// #define EE_HANDS
+#define EE_HANDS
 
 #ifdef SUBPROJECT_rev1
     #include "../../rev1/config.h"
@@ -35,3 +35,8 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifdef SUBPROJECT_rev2fliphalf
 	#include "../../rev2fliphalf/config.h"
 #endif
+
+#undef TAPPING_TERM
+#define TAPPING_TERM 300 //At 500 some bad logic takes hold
+#define PREVENT_STUCK_MODIFIERS
+#define IGNORE_MOD_TAP_INTERRUPT
