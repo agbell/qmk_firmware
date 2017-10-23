@@ -1,4 +1,4 @@
-Hexwire's Let's Split Layout
+exwire's Let's Split Layout
 ============================
 
 ### Changes from default layout

@@ -17,9 +17,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
 #define USE_SERIAL
-
-//#define MASTER_LEFT
-// #define MASTER_RIGHT
 #define EE_HANDS
 
 #ifdef SUBPROJECT_rev1
@@ -36,8 +33,12 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 	#include "../../rev2fliphalf/config.h"
 #endif
 
-#undef TAPPING_TERM
-#define TAPPING_TERM 200 //At 500 some bad logic takes hold
 #define PREVENT_STUCK_MODIFIERS
 #define IGNORE_MOD_TAP_INTERRUPT
 #define PERMISSIVE_HOLD
+
+//See if improves delay before hold for shift engaged
+#undef DEBOUNCING_DELAY
+#undef DEBOUNCE
+#define DEBOUNCING_DELAY 0
+#define DEBOUNCE  0

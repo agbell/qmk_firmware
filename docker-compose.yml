@@ -1,14 +1,11 @@
-qk:
-  # stdin_open: true
-  # tty: true
-  #entrypoint: /bash
+# specify keyboard / keymap / subproject (if req) and run `docker compose up`
+# will install all deps into a docker container and build firmware, cross platform
+# Only prereq is docker
+qmk:
   build: .
   environment:
+    keyboard: planck
     keymap: adam
-    keyboard: ergodox
-    ## comment out for ergodox
-    keyboard: lets_split
-    keymap: adam
-    subproject: rev2
+    subproject: rev4
   volumes:
     - .:/qmk
