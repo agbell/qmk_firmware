@@ -1,9 +1,8 @@
 #include "planck.h"
+#include "action_layer.h"
+#include "eeconfig.h"
 
-#define PREVENT_STUCK_MODIFIERS
-#define IGNORE_MOD_TAP_INTERRUPT
-#define PERMISSIVE_HOLD
-#define TAPPING_TERM    300
+
 // Each layer gets a name for readability, which is then used in the keymap matrix below.
 // The underscores don't mean anything - you can have a layer called STUFF or any other name.
 // Layer names don't all need to be of the same length, obviously, and you can also skip them
@@ -42,27 +41,3 @@ const uint16_t PROGMEM fn_actions[] = {
   [FLOCK] = ACTION_LAYER_TAP_KEY(FLOCK,KC_F),
   [JLOCK] = ACTION_LAYER_TAP_KEY(JLOCK,KC_J)
 };
-#ifdef TAP_DANCE_ENABLE
-void tap_1(qk_tap_dance_state_t *state, void *user_data) {
-  switch (state->count) {
-  case 1:
-    register_code (KC_1);
-    unregister_code (KC_1);
-    break;
-  case 2:
-    register_code (KC_ESC);
-    unregister_code (KC_ESC);
-    break;
-  case 3:
-    register_code (KC_LSFT);
-    register_code (KC_1);
-    unregister_code (KC_1);
-    unregister_code (KC_LSFT);
-  }
-}
-
-qk_tap_dance_action_t tap_dance_actions[] = {
-	[0]  = ACTION_TAP_DANCE_DOUBLE(KC_1, KC_ESC),
-  [1]  = ACTION_TAP_DANCE_FN(tap_1)
-};
-#endif
